@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Explore Osaka!</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="contact">
+    <header>
+      <div class="header__wrapper">
+        <div class="header__logo"><span>E</span>xplore <span>O</span>saka!</div>
+        <nav class="header__nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./tourism.html">Tourism</a></li>
+            <li><a href="./food.html">Food</a></li>
+            <li><a href="./history.html">History</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main__pagetitle">
+        <h1>Contact</h1>
+      </div>
+      <div class="main__content">
+        <section>
+          <p>Have questions or need assistance planning your trip to Osaka? We're here to help!<br>Reach out to us via email at info@exploreosaka.com or fill out the form below. Let's explore Osaka together!</p>
+          <form action="mailto:epscag@inf.elte.hu" method="post" enctype="text/plain">
+            <fieldset>
+              <label for="name"><strong>Name</strong></label><br>
+              <input type="text" name="name" id="name" size="60"><br>
+            </fieldset>
+            <fieldset>
+              <label for="email"><strong>E-mail address</strong></label><br>
+              <input type="email" name="email" id="email" size="60"><br>
+            </fieldset>
+            <fieldset>
+              <legend>Reason for Contact</legend>
+              <input type="radio" name="reason" id="question" value="question">
+              <label for="question">Question</label>
+              <input type="radio" name="reason" id="feedback" value="feedback">
+              <label for="feedback">Feedback</label>
+              <input type="radio" name="reason" id="support" value="support">
+              <label for="support">Support</label>
+              <input type="radio" name="reason" id="other" value="other">
+              <label for="other">Other</label>
+            </fieldset>
+            <fieldset>
+              <label for="message"><strong>Message</strong></label><br>
+              <textarea cols="60" rows="10" name="message" id="message"></textarea>
+            </fieldset>
+            <fieldset>
+              <input type="checkbox" name="newsletter" id="newsletter" value="subscribe">
+              <label for="newsletter">Subscribe to our newsletter</label>
+            </fieldset>
+            <fieldset class="buttons">
+              <input type="submit" value="Submit">
+              <input type="reset" value="Reset">
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>Author: Sangwoo Oh (epscag@inf.elte.hu)</p>
+    </footer>
+  </body>
+</html>

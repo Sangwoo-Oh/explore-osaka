@@ -1,0 +1,194 @@
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #1b1b1b;
+}
+html a {
+  color: #1b1b1b;
+  text-decoration: none;
+}
+html img, html video {
+  width: 100%;
+  display: block;
+}
+html .cta {
+  display: block;
+  margin: 0 auto;
+  background-color: #BC002D;
+  font-size: 1.6em;
+  padding: 7px 20px;
+  max-width: 150px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+html .cta:hover {
+  opacity: 0.7;
+}
+html body {
+  line-height: 1.5;
+}
+html body header .header__wrapper {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body header .header__logo {
+  font-size: 2.4em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+html body header .header__logo span {
+  color: #BC002D;
+}
+html body header .header__nav ul {
+  display: flex;
+}
+html body header .header__nav ul li a {
+  font-size: 1.6em;
+}
+html body header .header__nav ul li a:hover {
+  opacity: 0.7;
+}
+html body header .header__nav ul li:not(:last-child) a {
+  margin-right: 20px;
+}
+html body main .main__pagetitle {
+  padding: 40px 40px;
+  background-color: #BC002D;
+}
+html body main .main__pagetitle h1,
+html body main .main__pagetitle p {
+  color: #fff;
+}
+html body main .main__pagetitle h1 {
+  letter-spacing: 1px;
+  font-size: 2.8em;
+  font-weight: bold;
+}
+html body main .main__pagetitle p {
+  font-size: 1.8em;
+}
+html body main .main__content {
+  padding: 60px 40px;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+html body main .main__content h2 {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+html body main .main__content p {
+  font-size: 1.6em;
+}
+html body main .flex__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+html body main .flex__wrapper .left {
+  width: calc(50% - 10px);
+}
+html body main .flex__wrapper .right {
+  width: calc(50% - 10px);
+}
+html body main section {
+  margin-bottom: 50px;
+}
+html body footer {
+  padding: 20px;
+  background-color: #BC002D;
+}
+html body footer p {
+  font-size: 1.4em;
+  text-align: center;
+  font-style: italic;
+  color: #fff;
+}
+html body.home .main__pagetitle {
+  background-image: url(../media/osaka_bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+html body.home .main__pagetitle h1 {
+  margin-bottom: 20px;
+}
+html body.home .main__content .flex__wrapper .left {
+  width: calc(60% - 10px);
+}
+html body.home .main__content .flex__wrapper .right {
+  width: calc(40% - 10px);
+}
+html body.tourism .main__content .section__video h2 {
+  text-align: center;
+}
+html body.tourism .main__content .section__video video {
+  max-width: 600px;
+  margin: 0 auto;
+}
+html body.tourism .main__content .flex__wrapper {
+  flex-wrap: wrap;
+}
+html body.tourism .main__content .flex__wrapper .item {
+  margin-bottom: 50px;
+  width: calc(50% - 40px);
+}
+html body.tourism .main__content .flex__wrapper .item p {
+  margin-bottom: 30px;
+}
+html body.food .main__content .flex__wrapper {
+  flex-wrap: wrap;
+}
+html body.food .main__content .flex__wrapper .item {
+  margin-bottom: 50px;
+  width: calc(50% - 40px);
+}
+html body.food .main__content .flex__wrapper .item p {
+  margin-bottom: 30px;
+}
+html body.history .main__content table {
+  margin-top: 50px;
+  width: 100%;
+}
+html body.history .main__content table td {
+  font-size: 1.6em;
+  padding: 10px;
+  border: 1px solid #1b1b1b;
+}
+html body.history .main__content table thead {
+  background-color: #BC002D;
+  color: #fff;
+}
+html body.contact .main__content form {
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+  font-size: 1.6em;
+}
+html body.contact .main__content form fieldset {
+  margin-bottom: 20px;
+}
+html body.contact .main__content form fieldset.buttons input {
+  border: none;
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #BC002D;
+  font-size: 1.6rem;
+  padding: 7px 20px;
+  max-width: 150px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: bold;
+}
+html body.contact .main__content form fieldset.buttons input[type=reset] {
+  background-color: #666;
+}
+html body.contact .main__content form fieldset.buttons input:hover {
+  opacity: 0.7;
+}/*# sourceMappingURL=styles.css.map */

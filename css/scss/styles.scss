@@ -1,0 +1,269 @@
+$black: #1b1b1b;
+$jp-red: #BC002D;
+
+html {
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    color: $black;
+
+    a {
+        color: $black;
+        text-decoration: none;
+    }
+
+
+    img, video {
+        width: 100%;
+        display: block;
+    }
+
+    .cta {
+        display: block;
+        margin: 0 auto;
+        background-color: $jp-red;
+        font-size: 1.6em;
+        padding: 7px 20px;
+        max-width: 150px;
+        text-align: center;
+        color: #fff;
+        border-radius: 50px;
+        margin-top: 50px;
+        font-weight: bold;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    body {
+        line-height: 1.5;
+        header {
+            .header {
+                &__wrapper {
+                    padding: 20px 40px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                &__logo {
+                    font-size: 2.4em;;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    font-style: italic;
+                    span {
+                        color: $jp-red;
+                    }
+                }
+                &__nav {
+                    ul {
+                        display: flex;
+
+                        li {
+                            a {
+                                font-size: 1.6em;
+                                &:hover {
+                                    opacity: 0.7;
+                                }
+                            }
+                            &:not(:last-child) {
+                                a {
+                                    margin-right: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        main {
+            .main {
+                &__pagetitle {
+
+                    padding: 40px 40px;
+                    background-color: $jp-red;
+                    h1,
+                    p {
+                        color: #fff;
+                    }
+                    h1 {
+                        letter-spacing: 1px;
+                        font-size: 2.8em;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-size: 1.8em;
+                    }
+                }
+
+                &__content {
+                    padding: 60px 40px;
+                    max-width: 1000px;
+                    display: block;
+                    margin: 0 auto;
+
+                    h2 {
+                        font-size: 2.2em;
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        font-size: 1.6em;
+                    }
+                }
+            }
+
+            .flex__wrapper {
+                display: flex;
+                justify-content: space-between;
+                .left {
+                    width: calc(50% - 10px);
+                }
+                .right {
+                    width: calc(50% - 10px);
+                }
+            }
+
+            section {
+                margin-bottom: 50px;
+            }
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #BC002D;
+            p {
+                font-size: 1.4em;
+                text-align: center;
+                font-style: italic;
+                color: #fff;
+            }
+        }
+
+        &.home {
+            .main__pagetitle {
+                background-image: url(../media/osaka_bg.jpg);
+                background-position: center;
+                background-size: cover;
+                h1 {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .main__content {
+                .flex__wrapper {
+                    .left {
+                        width: calc(60% - 10px);
+                    }
+                    .right {
+                        width: calc(40% - 10px);
+                    }
+                }
+            }
+        }
+
+        &.tourism {
+            .main__content {
+                .section__video {
+                    h2 {
+                        text-align: center;
+                    }
+                    video {
+                        max-width: 600px;
+                        margin: 0 auto;
+                    }
+                }
+                .flex__wrapper {
+                    flex-wrap: wrap;
+                    .item {
+                        margin-bottom: 50px;
+                        width: calc(50% - 40px);
+                        p {
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.food {
+            .main__content {
+                .flex__wrapper {
+                    flex-wrap: wrap;
+                    .item {
+                        margin-bottom: 50px;
+                        width: calc(50% - 40px);
+                        p {
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.history {
+            .main__content {
+                table {
+                    margin-top: 50px;
+                    width: 100%;
+                    td {
+                        font-size: 1.6em;
+                        padding: 10px;
+                        border: 1px solid $black;
+                    }
+                    thead {
+                        background-color: #BC002D;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &.contact {
+            .main__content {
+                form {
+                    margin: 0 auto;
+                    display: block;
+                    margin-top: 50px;
+                    font-size: 1.6em;
+                    fieldset {
+                        margin-bottom: 20px;
+                        &.buttons {
+                            input {
+                                border: none;
+                                display: inline-block;
+                                margin: 0 auto;
+                                background-color: $jp-red;
+                                font-size: 1.6rem;
+                                padding: 7px 20px;
+                                max-width: 150px;
+                                text-align: center;
+                                color: #fff;
+                                border-radius: 50px;
+                                font-weight: bold;
+
+                                &[type=submit] {
+
+                                }
+
+
+                                &[type=reset] {
+                                    background-color: #666;
+                                }
+
+                                &:hover {
+                                    opacity: 0.7;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
