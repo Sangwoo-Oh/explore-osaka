@@ -10,6 +10,8 @@ html a {
 html img, html video {
   width: 100%;
   display: block;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 html .cta {
   display: block;
@@ -36,11 +38,21 @@ html body header .header__wrapper {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  html body header .header__wrapper {
+    padding: 10px 20px;
+  }
+}
 html body header .header__logo {
   font-size: 2.4em;
   font-weight: bold;
   letter-spacing: 2px;
   font-style: italic;
+}
+@media screen and (max-width: 768px) {
+  html body header .header__logo {
+    font-size: 1.6em;
+  }
 }
 html body header .header__logo span {
   color: #BC002D;
@@ -50,6 +62,11 @@ html body header .header__nav ul {
 }
 html body header .header__nav ul li a {
   font-size: 1.6em;
+}
+@media screen and (max-width: 768px) {
+  html body header .header__nav ul li a {
+    font-size: 1em;
+  }
 }
 html body header .header__nav ul li a:hover {
   opacity: 0.7;
@@ -61,6 +78,11 @@ html body main .main__pagetitle {
   padding: 40px 40px;
   background-color: #BC002D;
 }
+@media screen and (max-width: 768px) {
+  html body main .main__pagetitle {
+    padding: 20px;
+  }
+}
 html body main .main__pagetitle h1,
 html body main .main__pagetitle p {
   color: #fff;
@@ -70,8 +92,18 @@ html body main .main__pagetitle h1 {
   font-size: 2.8em;
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  html body main .main__pagetitle h1 {
+    font-size: 1.6em;
+  }
+}
 html body main .main__pagetitle p {
   font-size: 1.8em;
+}
+@media screen and (max-width: 768px) {
+  html body main .main__pagetitle p {
+    font-size: 1.2em;
+  }
 }
 html body main .main__content {
   padding: 60px 40px;
@@ -91,11 +123,26 @@ html body main .flex__wrapper {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  html body main .flex__wrapper {
+    flex-direction: column;
+  }
+}
 html body main .flex__wrapper .left {
   width: calc(50% - 10px);
 }
+@media screen and (max-width: 768px) {
+  html body main .flex__wrapper .left {
+    width: 100% !important;
+  }
+}
 html body main .flex__wrapper .right {
   width: calc(50% - 10px);
+}
+@media screen and (max-width: 768px) {
+  html body main .flex__wrapper .right {
+    width: 100% !important;
+  }
 }
 html body main section {
   margin-bottom: 50px;
@@ -138,6 +185,11 @@ html body.tourism .main__content .flex__wrapper .item {
   margin-bottom: 50px;
   width: calc(50% - 40px);
 }
+@media screen and (max-width: 768px) {
+  html body.tourism .main__content .flex__wrapper .item {
+    width: 100%;
+  }
+}
 html body.tourism .main__content .flex__wrapper .item p {
   margin-bottom: 30px;
 }
@@ -147,6 +199,11 @@ html body.food .main__content .flex__wrapper {
 html body.food .main__content .flex__wrapper .item {
   margin-bottom: 50px;
   width: calc(50% - 40px);
+}
+@media screen and (max-width: 768px) {
+  html body.food .main__content .flex__wrapper .item {
+    width: 100%;
+  }
 }
 html body.food .main__content .flex__wrapper .item p {
   margin-bottom: 30px;
@@ -172,6 +229,14 @@ html body.contact .main__content form {
 }
 html body.contact .main__content form fieldset {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  html body.contact .main__content form fieldset > input[type=text], html body.contact .main__content form fieldset > input[type=email] {
+    width: 100%;
+  }
+  html body.contact .main__content form fieldset > textarea {
+    width: 100%;
+  }
 }
 html body.contact .main__content form fieldset.buttons input {
   border: none;
