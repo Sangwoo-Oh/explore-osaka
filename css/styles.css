@@ -278,4 +278,21 @@ html body.contact .main__content form fieldset.buttons input[type=reset] {
 }
 html body.contact .main__content form fieldset.buttons input:hover {
   opacity: 0.7;
+}
+
+/* stylesheet for print media */
+@media print {
+  @page {
+    margin: 1cm;
+  }
+  html {
+    background: white;
+  }
+  body {
+    width: 100%;
+    background: white;
+  }
+  nav {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

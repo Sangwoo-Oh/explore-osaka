@@ -313,6 +313,21 @@ html {
             }
         }
     }
+}
 
+/* stylesheet for print media */
+@media print {
+	@page {
+		margin: 1cm;
+	}
 
+	html {
+		background:white;
+	}
+	body  {
+		width:100%;
+		background:white;
+	}
+
+	nav {display:none}
 }
