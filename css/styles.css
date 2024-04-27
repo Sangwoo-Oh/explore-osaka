@@ -11,7 +11,8 @@ html img, html video {
   width: 100%;
   display: block;
   aspect-ratio: 16/9;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 html .cta {
   display: block;
@@ -34,9 +35,15 @@ html body {
 }
 html body header .header__wrapper {
   padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (max-width: 768px) {
   html body header .header__wrapper {
@@ -58,6 +65,8 @@ html body header .header__logo span {
   color: #BC002D;
 }
 html body header .header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 html body header .header__nav ul li a {
@@ -120,12 +129,19 @@ html body main .main__content p {
   font-size: 1.6em;
 }
 html body main .flex__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   html body main .flex__wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 html body main .flex__wrapper .left {
@@ -179,7 +195,8 @@ html body.tourism .main__content .section__video video {
   margin: 0 auto;
 }
 html body.tourism .main__content .flex__wrapper {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 html body.tourism .main__content .flex__wrapper .item {
   margin-bottom: 50px;
@@ -194,7 +211,8 @@ html body.tourism .main__content .flex__wrapper .item p {
   margin-bottom: 30px;
 }
 html body.food .main__content .flex__wrapper {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 html body.food .main__content .flex__wrapper .item {
   margin-bottom: 50px;
@@ -211,6 +229,10 @@ html body.food .main__content .flex__wrapper .item p {
 html body.history .main__content table {
   margin-top: 50px;
   width: 100%;
+}
+html body.history .main__content table caption {
+  font-size: 1.6em;
+  text-align: left;
 }
 html body.history .main__content table td {
   font-size: 1.6em;
