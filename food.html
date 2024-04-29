@@ -11,6 +11,8 @@
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- js -->
+    <script src="js/index.js"></script>
   </head>
   <body class="food">
     <header>
@@ -39,32 +41,41 @@
               <h2>Takoyaki</h2>
               <p>Try this famous street food consisting of savory octopus balls, a must-try for any visitor.</p>
               <figure>
-                <img src="./media/takoyaki.jpg" alt="photo of takoyaki">
+                <img id="image01" src="./media/takoyaki.jpg" alt="photo of takoyaki">
               </figure>
             </div>
             <div class="item">
               <h2>Okonomiyaki</h2>
               <p>Experience the joy of grilling your own savory pancake filled with various ingredients.</p>
               <figure>
-                <img src="./media/okonomiyaki.jpg" alt="photo of okonomiyaki">
+                <img id="image02" src="./media/okonomiyaki.jpg" alt="photo of okonomiyaki">
               </figure>
             </div>
             <div class="item">
               <h2>Kushikatsu</h2>
               <p>Savor the crispy goodness of skewered and deep-fried meat and vegetables.</p>
               <figure>
-                <img src="./media/kushikatsu.jpg" alt="photo of kushikatsu">
+                <img id="image03" src="./media/kushikatsu.jpg" alt="photo of kushikatsu">
               </figure>
             </div>
             <div class="item">
               <h2>Butaman</h2>
               <p>Delight in these steamed pork buns, a comfort food staple enjoyed by locals and visitors alike.</p>
               <figure>
-                <img src="./media/butaman.jpg" alt="photo of butaman">
+                <img id="image04" src="./media/butaman.jpg" alt="photo of butaman">
               </figure>
             </div>
           </div>
         </section>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id="Modal">
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+        </div>
       </div>
     </main>
     <footer>

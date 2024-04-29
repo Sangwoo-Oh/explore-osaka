@@ -1,5 +1,5 @@
 html {
-  font-size: 62.5%;
+  font-size: 10px;
   font-family: "Roboto", sans-serif;
   color: #1b1b1b;
 }
@@ -11,8 +11,7 @@ html img, html video {
   width: 100%;
   display: block;
   aspect-ratio: 16/9;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 html .cta {
   display: block;
@@ -35,15 +34,9 @@ html body {
 }
 html body header .header__wrapper {
   padding: 20px 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   html body header .header__wrapper {
@@ -65,8 +58,6 @@ html body header .header__logo span {
   color: #BC002D;
 }
 html body header .header__nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 html body header .header__nav ul li a {
@@ -129,19 +120,12 @@ html body main .main__content p {
   font-size: 1.6em;
 }
 html body main .flex__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   html body main .flex__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 html body main .flex__wrapper .left {
@@ -195,8 +179,7 @@ html body.tourism .main__content .section__video video {
   margin: 0 auto;
 }
 html body.tourism .main__content .flex__wrapper {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 html body.tourism .main__content .flex__wrapper .item {
   margin-bottom: 50px;
@@ -210,9 +193,17 @@ html body.tourism .main__content .flex__wrapper .item {
 html body.tourism .main__content .flex__wrapper .item p {
   margin-bottom: 30px;
 }
+html body.food .main__content {
+  /* Style the Image Used to Trigger the Modal */
+  /* The Modal (background) */
+  /* Modal Content (Image) */
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  /* Add Animation - Zoom in the Modal */
+  /* The Close Button */
+  /* 100% Image Width on Smaller Screens */
+}
 html body.food .main__content .flex__wrapper {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 html body.food .main__content .flex__wrapper .item {
   margin-bottom: 50px;
@@ -225,6 +216,75 @@ html body.food .main__content .flex__wrapper .item {
 }
 html body.food .main__content .flex__wrapper .item p {
   margin-bottom: 30px;
+}
+html body.food .main__content #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+html body.food .main__content #myImg:hover {
+  opacity: 0.7;
+}
+html body.food .main__content .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+html body.food .main__content .modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+html body.food .main__content #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+html body.food .main__content .modal-content, html body.food .main__content #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+html body.food .main__content .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+html body.food .main__content .close:hover,
+html body.food .main__content .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  html body.food .main__content .modal-content {
+    width: 100%;
+  }
 }
 html body.history .main__content table {
   margin-top: 50px;
